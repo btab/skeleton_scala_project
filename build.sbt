@@ -18,7 +18,7 @@ seq(com.github.retronym.SbtOneJar.oneJarSettings: _*)
 
 // Scala
 
-scalaVersion := "2.9.1"
+scalaVersion := "2.9.2"
 
 scalacOptions ++= Seq("-deprecation", "-unchecked")
 
@@ -28,5 +28,5 @@ scalacOptions ++= Seq("-deprecation", "-unchecked")
 //resolvers ++= Seq()
 
 libraryDependencies ++= Seq(
-  "org.scalatest" %% "scalatest" % "1.6.1" % "test"
+  "org.scalatest" %% "scalatest" % "1.7.2" % "test"
 )
