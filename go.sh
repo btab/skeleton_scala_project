@@ -5,6 +5,9 @@ java_options="-Dfile.encoding=UTF8 -Xmx1536M -Xss1M -XX:+CMSClassUnloadingEnable
 sbt_command="java $java_options -jar project/sbt_0-11-3.jar"
 
 case $1 in
+  a | assemble)
+    $sbt_command update assembly;;
+  
   c | console)
     $sbt_command update console;;
     
@@ -14,9 +17,6 @@ case $1 in
   l | libraries)
     $sbt_command library-dependencies | grep List;;
     
-  p | package)
-    $sbt_command update one-jar;;
-    
   r | run)
     $sbt_command update run;;
     
@@ -24,5 +24,5 @@ case $1 in
     $sbt_command;;
     
   *)
-    echo "specify a command: (c)onsole, (d)evloop, (l)ibraries, (p)ackage, (r)un, (s)bt";;
+    echo "specify a command: (a)ssemble, (c)onsole, (d)evloop, (l)ibraries, (r)un, (s)bt";;
 esac

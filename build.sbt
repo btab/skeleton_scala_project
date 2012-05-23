@@ -1,3 +1,8 @@
+import AssemblyKeys._
+
+assemblySettings
+
+
 // Project
 
 name := "Project Name"
@@ -12,8 +17,6 @@ version := "1.0"
 scalaSource in Compile <<= baseDirectory / "app"
 
 scalaSource in Test <<= baseDirectory / "specs"
-
-seq(com.github.retronym.SbtOneJar.oneJarSettings: _*)
 
 
 // Scala
