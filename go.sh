@@ -2,7 +2,7 @@
 
 # taken from https://github.com/harrah/xsbt/wiki/Setup
 java_options="-Dfile.encoding=UTF8 -Xms512M -Xmx1536M -Xss1M -XX:+CMSClassUnloadingEnabled -XX:MaxPermSize=384M"
-sbt_command="java $java_options -jar project/sbt_0-11-3.jar"
+sbt_command="java $java_options -jar project/sbt_0-12-1.jar"
 
 case $1 in
   a | assemble)
