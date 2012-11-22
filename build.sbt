@@ -31,5 +31,5 @@ scalacOptions ++= Seq("-deprecation", "-unchecked")
 //resolvers ++= Seq()
 
 libraryDependencies ++= Seq(
-  "org.scalatest" %% "scalatest" % "1.7.2" % "test"
+  "org.scalatest" %% "scalatest" % "1.8" % "test"
 )
