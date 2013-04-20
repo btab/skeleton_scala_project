@@ -1,8 +1,8 @@
 #!/bin/sh -
 
-# taken from https://github.com/harrah/xsbt/wiki/Setup
+# taken from http://www.scala-sbt.org/release/docs/Getting-Started/Setup.html#unix
 java_options="-Dfile.encoding=UTF8 -Xms512M -Xmx1536M -Xss1M -XX:+CMSClassUnloadingEnabled -XX:MaxPermSize=384M"
-sbt_command="java $java_options -jar project/sbt_0-12-1.jar"
+sbt_command="java $java_options -jar project/sbt_0-12-3.jar"
 
 case $1 in
   a | assemble)

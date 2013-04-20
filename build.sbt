@@ -14,14 +14,14 @@ version := "1.0"
 
 // SBT
 
-scalaSource in Compile <<= baseDirectory / "app"
+scalaSource in Compile <<= baseDirectory / "src"
 
-scalaSource in Test <<= baseDirectory / "specs"
+scalaSource in Test <<= baseDirectory / "test"
 
 
 // Scala
 
-scalaVersion := "2.9.2"
+scalaVersion := "2.10.1"
 
 scalacOptions ++= Seq("-deprecation", "-unchecked")
 
@@ -31,5 +31,5 @@ scalacOptions ++= Seq("-deprecation", "-unchecked")
 //resolvers ++= Seq()
 
 libraryDependencies ++= Seq(
-  "org.scalatest" %% "scalatest" % "1.8" % "test"
+  "org.scalatest" %% "scalatest" % "1.9.1" % "test"
 )
